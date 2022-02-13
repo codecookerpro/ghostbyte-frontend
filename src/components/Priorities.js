@@ -23,7 +23,7 @@ const Priorities = () => {
     },
   }
     return (
-      <div className='justify-center bg-bgsecondary lg:flex lg:flex-row space-x-8 lg:pb-24'>
+      <div className='justify-center bg-bgsecondary flex flex-col items-center lg:flex-row lg:space-x-8 pb-24'>
         <div style={{width:'370px', height: '320px'}}> 
           <Block
           heading={data.block1.heading}
