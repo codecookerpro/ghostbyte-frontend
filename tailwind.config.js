@@ -22,7 +22,7 @@ module.exports = {
       },
       screens: {
         'sm': '300px',
-        'md': '768px',
+        'md': '700px',
         'lg': '1024px'
         },
       fontFamily: {

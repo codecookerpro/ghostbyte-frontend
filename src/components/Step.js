@@ -12,7 +12,7 @@ const Step = ({title, heading, description, img, alternate, oneline}) => {
         <div className={alternate? row : rowReverse}>
           <div className={alternate? divp: divpReverse}>
             <div id="divider" className="rounded-full ring-4 ring-dividercolor justify-end w-full lg:w-1/12 "></div>
-            <p className="p-5 text-4xl font-body leading-relaxed text-center lg:pb-4 lg:text-steptitle lg:pl-0 lg:font-bold lg:text-left">
+            <p className="p-5 text-5xl font-body leading-relaxed text-center lg:pb-4 lg:text-steptitle lg:pl-0 lg:font-bold lg:text-left">
                 <span className={oneline?onerow : doublerow}>{title}</span>
                 <span className='text-white'>{heading}</span>
             </p>

@@ -12,7 +12,7 @@ const Contact = ({actionText, email, phone, discord, mainActionText, extraAction
       <div className="items-center justify-center flex flex-col lg:pb-24 lg:pt-24  lg:flex-row lg:space-x-12 bg-bgsecondary">
         <div className="w-2/6 flex flex-col items-center justify-center space-y-6 lg:items-start">
           <div>
-            <p className="mt-16 text-lg font-semibold text-center text-white  lg:pr-12 lg:mb-10 lg:mt-1 lg:text-contactAction lg:font-semibold lg:text-left">{actionText}</p>
+            <p className="mt-16 text-llg font-semibold text-center text-white  lg:pr-12 lg:mb-10 lg:mt-1 lg:text-contactAction lg:font-semibold lg:text-left">{actionText}</p>
           </div>
           <div>
             <img className="mx-24 lg:mx-0 w-fit h-fit justify-center" src={imgEmail} alt=''/>
