@@ -3,6 +3,7 @@ import React from "react";
 import imgEmail from '../assets/email.png'; 
 import imgPhone from '../assets/phone.png'; 
 import imgDiscord from '../assets/discord.png'; 
+import {ContactUs} from './Email'
 
 
 const Contact = ({actionText, email, phone, discord, mainActionText, extraActionText}) => {
@@ -31,16 +32,17 @@ const Contact = ({actionText, email, phone, discord, mainActionText, extraAction
         <div className="lg:w-2/6 flex flex-col justify-center items-start space-y-8 lg:pb-24 lg:pt-24">
           <p className="mt-2 text-base font-body text-center font-medium text-white lg:text-contactTitle lg:mt-2 lg:font-semibold lg:text-left">{mainActionText}</p>
           <div style={{width: '473px', height: '70px'}} >
-            <input type='email' className="lg:w-full lg:h-full bg-bgblock shadow-block text-white opacitey-50 p-4 rounded-large" placeholder="Email"></input>
+            <input type='email' id="sender"className="lg:w-full lg:h-full bg-bgblock shadow-block text-white opacitey-50 p-4 rounded-large" placeholder="Email"></input>
           </div>
           <div style={{width: '473px', height: '70px'}}>
-            <input type='text' className="lg:w-full lg:h-full bg-bgblock shadow-block text-white opacitey-50 p-4 rounded-large" placeholder="Subject"></input>
+            <input type='text' id="subject" className="lg:w-full lg:h-full bg-bgblock shadow-block text-white opacitey-50 p-4 rounded-large" placeholder="Subject"></input>
           </div>
         <div style={{width: '473px', height: '200px'}}>
-          <textarea  type='text' cols='40' rows='5' className="lg:w-full lg:h-full bg-bgblock shadow-block text-white opacitey-50 p-4 rounded-large" placeholder="Content..."></textarea >
+          <textarea  type='text' id="content" cols='40' rows='5' className="lg:w-full lg:h-full bg-bgblock shadow-block text-white opacitey-50 p-4 rounded-large" placeholder="Content..."></textarea >
         </div>
           <div style={{width: '473px', height: '70px'}}>
             <button
+            onClick={()=>ContactUs()}
             style={{background: 'linear-gradient(151.46deg, #01F2FF -14.78%, #0142FF 113.99%)'}}
               className="capitalize font-body font-medium text-contactDes text-center text-white transition-all rounded-large focus:ring2 lg:shadow-2xl lg:ring-2 lg:w-full lg:h-full"
             >

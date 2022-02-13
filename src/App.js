@@ -19,7 +19,6 @@ function App() {
       tagLine: 'FILECOIN STORAGE PROVIDER',
       description: 'Providing fast, secure, redundant data storage for our most valuable clients.',
       mainActionText: 'Explore',
-      extraActionText: 'App Store',
     },
     contact: {
       actionText: 'Investors and Client Contact Information',
